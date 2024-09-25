@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summa arvutamine</title>
+    <script>
+        function arvutaSumma() {
+            // Võta kasutaja sisestatud väärtused
+            var arv1 = parseInt(document.getElementById("arv1").value);
+            var arv2 = parseInt(document.getElementById("arv2").value);
+            var tulemus = arv1 + arv2;
+
+            // Kontrolli, kas summa ületab 100
+            if (tulemus > 100) {
+                document.getElementById("tulemus").innerHTML = "Summa on suurem kui 100!";
+            } else {
+                document.getElementById("tulemus").innerHTML = "Summa on: " + tulemus;
+            }
+        }
+    </script>
+</head>
+<body>
+
+<h1>Arvuta kahe arvu summa</h1>
+
+<form onsubmit="event.preventDefault(); arvutaSumma();">
+    <label for="arv1">Sisesta esimene arv:</label>
+    <input type="number" id="arv1" required><br><br>
+
+    <label for="arv2">Sisesta teine arv:</label>
+    <input type="number" id="arv2" required><br><br>
+
+    <input type="submit" value="Arvuta">
+</form>
+
+<p id="tulemus"></p>
+
+</body>
+</html>

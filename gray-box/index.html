@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulaator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Kalkulaator</h2>
+    <form id="calculatorForm">
+        <input type="number" id="num1" placeholder="Sisesta esimene arv">
+        <input type="number" id="num2" placeholder="Sisesta teine arv">
+        <select id="operation">
+            <option value="add">Liitmine</option>
+            <option value="subtract">Lahutamine</option>
+            <option value="multiply">Korrutamine</option>
+            <option value="divide">Jagamine</option>
+        </select>
+        <button type="submit">Arvuta</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

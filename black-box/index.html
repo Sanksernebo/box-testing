@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontaktvorm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Kontaktvorm</h2>
+    <form id="contactForm">
+        <label for="name">Nimi:</label>
+        <input type="text" id="name" name="name">
+        <div id="nameError" class="error-message"></div>
+
+        <label for="email">E-posti aadress:</label>
+        <input type="text" id="email" name="email">
+        <div id="emailError" class="error-message"></div>
+
+        <label for="message">Sõnum:</label>
+        <textarea id="message" name="message"></textarea>
+        <div id="messageError" class="error-message"></div>
+
+        <button type="submit">Saada</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
